@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta property="og:url" content="https://toyokeizai.net/sp/visual/tko/landprices3/en.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="3D Map of Land Values in Japan: 1989 - 2019" />
+		<meta property="og:description" content="26,000 points of official land prices of the whole country for the past 30 years" />
+		<meta property="og:image" content="https://toyokeizai.net/sp/visual/tko/landprices3/img/image_1200_630.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css"/>
+		<title>3D Map of Land Values in Japan: 1989 - 2019</title>
+	</head>
+	<body class="en">
+    <div id="cover"></div>
+    <div id="container">
+			<div id="header-block">
+				<a href="https://toyokeizai.net/">
+					<img id="img-logo" src="../../assets/img/logo-tko.png" />
+				</a>
+			</div>
+			<div id="title-block">
+				<h1>3D Map of Land Values in Japan: 1989 - 2019</h1>
+				<h5>26,000 points of official land prices of the whole country for the past 30 years</h5>
+				<div class="date">3rd April 2019
+					<div id="link-language">
+						<a href="index.html">JAPANESE</a>
+					</div>
+				</div>
+			</div>
+			<div id="controls-block">
+				<select id="select-data">
+					<option value="latest">Latest value</option>
+					<option value="rate18">Compare with 2018</option>
+					<option value="rate09">Compare with 2009</option>
+					<option value="rate99">Compare with 1999</option>
+					<option value="rate89">Compare with 1989</option>
+				</select>
+				<select id="select-area">
+					<option value="all">All points</option>
+					<option value="RE">Residensial area</option>
+					<option value="BS">Business area</option>
+				</select>
+			</div>
+			<div id="iframe-block">
+				<div id="no-support">
+					<div class="cover">
+						<p>We are afraid that your browser is not compatible with this map.<br />Please try again with browsers such as Chrome, Edge, or Firefox.</p>
+					</div>
+				</div>
+				<iframe src="embed/en.html" width="100%" height="100%" frameborder="0"></iframe>
+				<button id="button-close"></button>
+			</div>
+			<p class="fullscreen">
+				<a id="fullscreen">Show full screen</a>
+			</p>
+			<div id="article-block">
+				<section>
+					<p>On March 20th, Japanese <a href="http://www.land.mlit.go.jp/webland/" target="_blank">Ministry of Land, Infrastructure, Transport and Tourism</a> (MLIT) published the latest land values of approximately 26,000 points in Japan. MLIT has been publishing the land values once a year. Toyo Keizai plotted the land values from 1989, the peak of Japanese real estate bubble, to 2019, the latest, to see how land land values have fluctuated.</p>
+					<p>You can see the latest value or compare the latest with the past, and filter types of area (residensial / business). Each hexagonal column may contain multiple points. Color and height are calculated based on the average price or fluctuation rate. Detailed information can be shown by tapping or mouse hovering.</p>
+					<p><a href="https://deck.gl/" target="_blank">Deck.GL</a>, a WebGL framework provided by UBER was used to draw the 3D map.</p>
+					<p class="small"><a href="https://toyokeizai.net/articles/-/270682" target="_blank">Explanation article</a> [in Japanese]</p>
+					<p class="small"><a href="img/image_1280_720.png" download="image_1280_720.png" target="_blank">Download image</a> (png)</p>
+					<p class="small"><a href="https://github.com/kaz-ogiwara/tk-visual" target="_blank">GitHub</a> for downloading data and seeing source code.</p>
+					<p class="small">Created by: <a href="https://toyokeizai.net/list/author/%E8%8D%BB%E5%8E%9F_%E5%92%8C%E6%A8%B9" target="_blank">Kazuki OGIWARA</a> (Toyo Keizai Online) </p>
+				</section>
+			</div>
+			<div id="social-block">
+				<a class="fbshare" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fvisual%2ftko%2flandprices3%2fen.html" target="_blank"></a>
+				<a class="twitter" href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fvisual%2ftko%2flandprices3%2fen.html" target="_blank"></a>
+				<a class="gplus"   href="https://plus.google.com/share?url=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fvisual%2ftko%2flandprices3%2fen.html" target="_blank"></a>
+				<a class="line"    href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fvisual%2ftko%2flandprices3%2fen.html" target="_blank"></a>
+			</div>
+			<div id="footer-block">
+				<hr>
+				<a href="http://corp.toyokeizai.net/">
+					<img id="img-corporate" src="../../assets/img/logo-corporate.png" alt="東洋経済新報社">
+				</a>
+				<p>Copyright &copy; Toyo Keizai Inc. All Rights Reserved.</p>
+			</div>
+    </div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
